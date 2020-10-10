@@ -1,0 +1,7 @@
+com\starlight\data\StarlightController.class
+com\starlight\data\Tweet.class
+com\starlight\data\TweetRepository.class
+com\starlight\data\AuthorRepository.class
+com\starlight\data\StarlightTweetApplication.class
+com\starlight\data\STweet.class
+com\starlight\data\Author.class
