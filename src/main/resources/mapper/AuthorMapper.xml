@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.starlight.mapper.AuthorMapper">
+	<select id="getAllAuthor" resultType="com.starlight.model.Author">
+		select * from author
+	</select>
+	<select id="getById" parameterType="long" resultType="com.starlight.model.Author">
+		select * from author where id=#{authorid}
+	</select>
+	<insert id="save" parameterType="com.starlight.model.Author">
+		insert into author(id,name,project,name_chn)
+		values(#{id}, #{name}, #{project},#{name_chn})
+	</insert>
+</mapper>
