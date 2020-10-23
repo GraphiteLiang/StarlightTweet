@@ -7,7 +7,7 @@ import com.starlight.model.Tweet;
 public interface TweetMapper {
 	public List<Tweet> getTweetByAuthor(long authorid);
 
-	public List<Tweet> getAllByOrderByIdDesc();
+	public List<Tweet> getAllByOrderByIdPage();
 
 	public List<Tweet> getByContent(String content);
 
